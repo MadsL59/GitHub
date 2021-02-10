@@ -1,0 +1,39 @@
+/*
+Colours used:
+Primary Colour ():#   ;
+Secondary Colour ():#  ;
+*/
+
+body {
+  background-color: #F9F9F9;
+  font-family: 'Philosopher', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+h1,h2,h3 {
+  line-height:1.4;
+}
+
+h1 {
+  font-family:'Philosopher', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: red;
+}
+
+h2{
+  font-family:'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+h3{
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  }
+
+img {
+  width: 100%;
+}
