@@ -1,14 +1,16 @@
 /*
 Colours used:
-Primary Colour ():#   ;
-Secondary Colour ():#  ;
+Primary Colour: #8FBC8F;
+Secondary Colour: #2F4F4F;
 */
 
 body {
   background-color: #F9F9F9;
-  font-family: 'Philosopher', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #000000;
 }
 
 h1,h2,h3 {
@@ -18,22 +20,115 @@ h1,h2,h3 {
 h1 {
   font-family:'Philosopher', sans-serif;
   font-weight: 400;
-  font-size: 24px;
-  color: red;
+  font-size: 1.6em;
+  color: #2F4F4F;
 }
 
 h2{
   font-family:'Philosopher', sans-serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 1.5em;
 }
 
 h3{
-  font-family:'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.3em;
   }
+
+#mystory {
+  font-family:'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  }
+
+#linkedin, #behance {
+  width: 50px;
+  height: auto;
+}
+
+#caseimage {
+  width: 700px;
+  height: auto;
+}
+
+#mypicture {
+  width: 300px;
+  height: auto;
+}
+
+#caseimages {
+  width: 500px;
+  height: auto;
+}
 
 img {
   width: 100%;
+}
+
+.container {
+  padding: 0.5% 2%;
+}
+
+a {
+  color: #8FBC8F;
+  text-decoration: none;  /* No underlining */
+}
+
+a:hover,
+a:focus {
+  color: #2F4F4F;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:active {
+  color: #2F4F4F;
+}
+
+.button{
+  display: inline-block;
+  background-color: #8FBC8F;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #2F4F4F; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.buton.contact {
+  background-color: transparent;
+  color: #8FBC8F;
+  text-transform: uppercase;
+  border: 2px #8FBC8F;
+}
+
+.button.contact:hover {
+  background-color: #8FBC8F;
+  color: #000000;
+}
+
+.buton.resume {
+  background-color: transparent;
+  color: #8FBC8F;
+  text-transform: uppercase;
+  border: 2px #8FBC8F;
+}
+
+.button.resume:hover {
+  background-color: #8FBC8F;
+  color: #000000;
 }
