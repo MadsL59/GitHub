@@ -35,37 +35,6 @@ h3{
   font-size: 1.3em;
   }
 
-#mystory {
-  font-family:'Philosopher', sans-serif;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-
-#logo {
-  width: 150px;
-  height: auto;
-  }
-
-#linkedin, #behance {
-  width: 50px;
-  height: auto;
-}
-
-#caseimage {
-  width: 700px;
-  height: auto;
-}
-
-#mypicture {
-  width: 300px;
-  height: auto;
-}
-
-#caseimages {
-  width: 500px;
-  height: auto;
-}
-
 img {
   width: 100%;
 }
@@ -79,14 +48,14 @@ a {
   text-decoration: none;  /* No underlining */
 }
 
+a:visited {
+  color: #000000;
+}
+
 a:hover,
 a:focus {
   color: #2F4F4F;
   text-decoration: underline;
-}
-
-a:visited {
-  color: #000000;
 }
 
 a:active {
@@ -96,7 +65,7 @@ a:active {
 .button{
   display: inline-block;
   background-color: #8FBC8F;
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
@@ -109,26 +78,14 @@ a:active {
   text-decoration: none;
 }
 
-.buton.contact {
+.buton.contact, .buton.resume  {
   background-color: transparent;
   color: #8FBC8F;
   text-transform: uppercase;
-  border: 2px #8FBC8F;
+  border: 2px solid #8FBC8F;
 }
 
-.button.contact:hover {
-  background-color: #8FBC8F;
-  color: #000000;
-}
-
-.buton.resume {
-  background-color: transparent;
-  color: #8FBC8F;
-  text-transform: uppercase;
-  border: 2px #8FBC8F;
-}
-
-.button.resume:hover {
+.button.contact:hover, .button.resume:hover {
   background-color: #8FBC8F;
   color: #000000;
 }
