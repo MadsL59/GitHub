@@ -12,7 +12,7 @@ header {
   background-color: #EEF4EE;
   text-align: center;
   padding: 10px 0px;
-  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.20);
   position: relative;
 }
 
@@ -104,6 +104,10 @@ a:active {
   color: #000000;
 }
 
+footer .button {
+  margin: 1em 0;
+}
+
 /* Layout styling */
 
 .container {
@@ -115,7 +119,7 @@ a:active {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 #about-page h3 {
@@ -125,6 +129,18 @@ a:active {
 .my-picture {
   max-width: 250px;
   padding-left: 5%;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.project-image {
+  max-width: 700px;
+}
+
+.solution {
+  max-width: 300px;
 }
 
 nav > ul {
@@ -137,7 +153,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 14px;
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
@@ -157,29 +173,30 @@ nav > ul > li > a:active {
 }
 
 .welcome {
-  padding: 20px 0;
+  padding: 20px 20px;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 .welcome span {
   display: block;
 }
 
-.social-icons {
-  max-width: 70px;
+.social-icons img {
+  max-width: 35px;
 }
 
-.social-icons > ul {
+.social > ul.social-icons {
   list-style-type: none;
   padding: 0;
 }
 
-.social-icons > ul > li {
+.social > ul.social-icons > li {
   display: inline-block;
 }
 
-.social-icons > ul > li > a {
+.social > ul.social-icons > li > a {
   padding: 0 15px;
 }
 
@@ -216,8 +233,8 @@ nav > ul > li > a:active {
   }
   .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   }
 }
 
