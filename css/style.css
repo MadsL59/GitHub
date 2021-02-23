@@ -188,15 +188,16 @@ footer h2 {
   display: none;
 }
 
-.navtoggle, .navtoggle.resposive {
+/* .navtoggle, .navtoggle.resposive {
   position: relative;
-}
+} */
 
 .navtoggle li .icon {
   position: absolute;
   right:  0;
-  top: 2px;
+  top: 14px;
   font-size: 20px;
+  padding-right: 30px;
 }
 
 .navtoggle.responsive li {
@@ -211,6 +212,10 @@ footer h2 {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+header .container {
+  position: relative;
 }
 
 nav>ul {
