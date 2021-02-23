@@ -9,7 +9,7 @@ Secondary Colour: #2F4F4F;
 
 header {
   background-color: #EEF4EE;
-  padding: 10px 0px;
+  padding: 10px 4px;
   box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.20);
   position: fixed;
   width: 100%;
@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding-top: 126px;
+  padding-top: 100px;
 }
 
 h1, h2, h3 {
@@ -203,7 +203,7 @@ footer h2 {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  /* border-top: 1px solid rgba(255,127,80,0.5); */
 }
 
 .navtoggle.responsive nav {
@@ -221,7 +221,7 @@ header .container {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -325,7 +325,7 @@ nav>ul>li>a:active {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -334,7 +334,10 @@ nav>ul>li>a:active {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    /* margin-top: 4px; */
+  }
+  nav > ul {
+    margin: 1em 0;
   }
 
   nav>ul>li {
@@ -347,6 +350,10 @@ nav>ul>li>a:active {
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
   }
 
   .col-md-4 {
