@@ -69,11 +69,6 @@ h2 {
   text-align: center;
 }
 
-section .container {
-  height: 2554px;
-  background-color: #020202;
-}
-
 .aboutme {
   padding-top: 100px;
 }
@@ -131,6 +126,7 @@ h3 {
 .read-more {
   margin-top: 50px;
 }
+
 .work h3 {
   margin-top: 0;
 }
@@ -233,6 +229,7 @@ hr {
   max-width: 500px;
   border-bottom: 3px #ffffff;
 }
+
 .logo {
   width: 80px;
   padding-top: 10px;
@@ -293,10 +290,6 @@ hr {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
-}
-
-header .container {
-  position: relative;
 }
 
 nav>ul {
@@ -412,10 +405,6 @@ nav>ul>li>a:active {
     padding: 20px 0 13px;
   }
 
-  /* section .container {
-    height: 1600px;
-  } */
-
   nav {
     width: auto;
     float: right;
@@ -474,10 +463,6 @@ nav>ul>li>a:active {
   .col-lg-7 {
     width: 58.33%;
   }
-
-  /* section .container {
-    height: 3000px;
-  } */
 
   footer {
     text-align: center;
