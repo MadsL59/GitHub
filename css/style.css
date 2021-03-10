@@ -20,6 +20,10 @@ header {
   z-index: 90;
 }
 
+.about_header {
+  padding-top: 0;
+}
+
 body {
   background-color: #020202;
   font-family: 'Lato', sans-serif;
@@ -37,6 +41,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.home2 {
+  background-image: url('../img/moon_copy2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .home3 {
+  background-image: url('../img/blue_sky.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.content  {
+  padding: 1px 18%;
+  width: 90%
+  padding
+}
+
+
 #navbar {
   background-color: rgba(0,0,0);
   position: fixed;
@@ -44,6 +71,7 @@ body {
   width: 100%;
   transition: top 0.3s;
 }
+
 
 h1, h2, h3 {
   line-height: 1.4;
@@ -80,6 +108,7 @@ h3 {
   font-weight: 500;
   font-size: 1.3em;
   color: #ffffff;
+  margin-top:
 }
 
 .hero {
@@ -91,12 +120,20 @@ h3 {
 }
 
 .hero h1  {
-  margin-top: 100px;
+  margin-top: 200px;
+  font-size: 1.4em;
 }
 
 .hero h1 span {
   display: block;
   font-size: 70%;
+  margin-top: 10px;
+}
+
+
+.hero h3 {
+  font-size: 1em;
+  margin-top: 50px;
 }
 
 .hero a {
@@ -105,8 +142,8 @@ h3 {
 
 .hero .fas {
   font-size: 32px;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   background: #d42f01;
   border-radius: 10em;
   display: flex;
@@ -172,8 +209,13 @@ a:active {
 }
 
 .button:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
   text-decoration: none;
+  background-color: #d42f01;
+}
+
+.button:active {
+  background-color: #d42f01;
 }
 
 .buton.contact, .buton.resume {
@@ -226,26 +268,50 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-  max-width: 500px;
-  border-bottom: 3px #ffffff;
-}
+  max-width: 100px;
+  border-bottom: 3px #ffffff;}
 
 .logo {
   width: 80px;
   padding-top: 10px;
 }
 
+.logo_ab {
+  padding-top: 0;
+}
+
 #about-page h3 {
   margin-top: 0;
 }
 
-.my-picture {
-  margin-top: 13%;
+.aboutme h2{
+  padding-left: 15px;
+  padding-top:  0;
 }
+
+
 
 .copyright {
   font-size: 14px;
 }
+
+#plan_cs {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.content  {
+  padding: 1px 7%;
+}
+
+.content h2 {
+  font-size: 1.2em;
+}
+
+.content h3 {
+  font-size: 1em;
+}
+
 
 .project-image {
   max-width: 700px;
@@ -253,14 +319,24 @@ hr {
   margin: 0 auto;
 }
 
+.project-image2 {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
 .solution {
-  max-width: 300px;
+  max-width: 130px;
   margin: 0 auto;
   display: block;
 }
 
 .solution-text {
   text-align: center;
+}
+
+#last_img {
+  padding-bottom: 30px;
 }
 
 .navtoggle li:not(:last-child) {
@@ -445,7 +521,33 @@ nav>ul>li>a:active {
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 20px;
+  }
+
+  .hero h1  {
+    margin-top: 250px;
+    font-size: 2.2em;
+  }
+  .hero p {
+    font-size:  120%;
+  }
+
+  .hero h3 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    padding-top: 100px;
+  }
+
+  .hero .fas {
+    font-size: 32px;
+    width: 1.5em;
+    height: 1.5em;
+    background: #d42f01;
+    border-radius: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
   }
 
   .row::after {
@@ -453,6 +555,41 @@ nav>ul>li>a:active {
     clear: both;
     display: table;
   }
+
+  .my-picture {
+    margin-top: 50px;;
+  }
+
+  .aboutme h2{
+    padding-left: 50px;
+    padding-bottom: 0;
+    font-size: 1.7em;
+  }
+
+  .content  {
+    padding: 1px 2%;
+    width: 90%;
+    padding-left: 90px;
+  }
+
+  .content p {
+    font-size: 1.2em;
+  }
+
+  .solution {
+    max-width: 170px;
+  }
+
+  .project-image2 {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  hr {
+    max-width: 200px;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -462,6 +599,24 @@ nav>ul>li>a:active {
 
   .col-lg-7 {
     width: 58.33%;
+  }
+
+  .col-md-8 p {
+    padding-top: 70px;
+  }
+ #entry2 {
+    padding-top: 0;
+  }
+  .hero h1 span {
+    font-size: 60%;
+    margin-top: 10px;
+  }
+  .work  h3 {
+    margin-top: 120px;
+  }
+
+  hr {
+    max-width: 200px;
   }
 
   footer {
@@ -474,4 +629,10 @@ nav>ul>li>a:active {
   .my-picture {
     margin-top: 8%;
   }
+
+  .content  {
+    padding: 1px 18%;
+    width: 96%;
+  }
+
 }
