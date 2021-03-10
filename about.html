@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Madalina Loghin</title>
+  <title>Madalina Loghin, UI/UX Designer, London</title>
   <link href="img/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/168a671610.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="about-page">
-  <header>
-    <div class="container">
+<body class="home2" id="about-page">
+  <header class="about_header">
+    <div class="container" id="navbar">
         <a href="index.html">
           <img class="logo" src="img/Logo_w.png" alt="Madalina Loghin">
         </a>
@@ -23,21 +23,21 @@
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="container">
+    <!-- <section class="container"> -->
       <!-- For the 1st Orange Div -->
       <div class="aboutme">
         <!-- For the yellow div -->
-        <h1>About me</h1>
+        <h2>My Story</h2>
       </div>
-    </section>
+    <!-- </section> -->
 
     <section class="story">
       <!-- For the 2nd Orange div -->
@@ -51,21 +51,15 @@
             </picture>
           </div>
 
-          <div class="column col-md-8">
+          <div class="column col-md-8 col-lg-7">
             <!-- For the 1st turquoise div -->
-            <h2>My Story</h2>
+            <!-- <h2>My Story</h2> -->
             <p>I am a driven and self-motivated UI/UX Designer based in London, with
               a great sense of taste and eye for details, eager to take ideas from
               concept to wireframe, prototype to production. I have experience in
               understanding clients and delivering visual content for print and online
               for a 614k weekly audience as well as achieving sales targets.</p>
-            <p>Working in editorial and production taught me how to work efficiently
-              to deliver clear and engaging content focused on readers’ needs but also
-              how to become more flexible and adaptable to different visual requirements
-              and deadlines.I am determined to create meaningful experiences through design
-              using my skills such as research, ideation and UI Design skills as well as
-              collaboration, empathy and creativity.</p>
-            <p>My goal is to produce exciting and user-centric solutions in order to provide
+            <p id="entry2">My goal is to produce exciting and user-centric solutions in order to provide
               support for people that are interested in travel, self-care, well-being, fashion
               or fintech.My life mantra is ALWAYS love what you do and NEVER settle for less.
               In addition to my work and passion for UI Design, I am also a photographer,
@@ -109,13 +103,13 @@
       </div>
     </section>
   </main>
+  <hr>
 
   <footer id="contact">
     <div class="container">
       <!-- yellow -->
       <h2> Get in Touch </h2>
-      <p> If you like my work and want to discuss opportunities or simply just talk design, please get in touch. Call: <a href="tel:+47263729263">+47263729263</a> or email me at <a href="mailto:info@madalinal.com"
-          class="button contact">info@madalinal.com</a></p>
+      <p> If you like my work and want to discuss opportunities or simply just talk design, please get in touch. Email me at <a href="mailto:madalina.m.loghin@gmail.com" class="button contact">madalina.m.loghin@gmail.com</a></p>
 
       <div class="social">
         <!--Social Media Layout and Placeholders-->
@@ -127,7 +121,7 @@
 
           <li><a href="https://www.behance.net/madalinaloghin" target="_blank">
               <img
-                src="data:image/svg+xml;base64,PHN2ZyBpZD0iQm9sZCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTEyLjM2MyAxNC45NDdjMC0xLjg0OC0uODc5LTMuMjE0LTIuNjk1LTMuNzI2IDEuMzI1LS42MzEgMi4wMTYtMS41ODcgMi4wMTYtMy4wNzQgMC0yLjkzMi0yLjE5Mi0zLjY0Ny00LjcyMS0zLjY0N2gtNi45NjN2MTQuNzIxaDcuMTU4YzIuNjg0IDAgNS4yMDUtMS4yODMgNS4yMDUtNC4yNzR6bS05LjExNy03LjkzNGgzLjA0NmMxLjE3MSAwIDIuMjI1LjMyOCAyLjIyNSAxLjY4MiAwIDEuMjUtLjgyIDEuNzUzLTEuOTggMS43NTNoLTMuMjkxem0tLjAwMSA5LjcwOHYtNC4wNTRoMy41MzhjMS40MjkgMCAyLjMzMy41OTQgMi4zMzMgMi4xMDIgMCAxLjQ4Ny0xLjA3OSAxLjk1Mi0yLjQgMS45NTJ6Ii8+PHBhdGggZD0ibTE4Ljc5NiAxOS41YzIuNTU0IDAgNC4yMDgtMS4xNDcgNS4wMDQtMy41ODVoLTIuNTkyYy0uMjc5LjkxLTEuNDI5IDEuMzkxLTIuMzIxIDEuMzkxLTEuNzIxIDAtMi42MjUtMS4wMDUtMi42MjUtMi43MTNoNy43MTNjLjI0NC0zLjQxOC0xLjY2LTYuMzMxLTUuMTgtNi4zMzEtMy4yNTkgMC01LjQ3MSAyLjQ0Mi01LjQ3MSA1LjY0MSAwIDMuMzIgMi4wOTYgNS41OTcgNS40NzIgNS41OTd6bS0uMDkyLTkuMDI2YzEuNDc1IDAgMi4yMTcuODY0IDIuMzQxIDIuMjc3aC00Ljc3OWMuMDk3LTEuNDAxIDEuMDMtMi4yNzcgMi40MzgtMi4yNzd6Ii8+PHBhdGggZD0ibTE1LjY2NyA1LjI3M2g1Ljk4OHYxLjQ1aC01Ljk4OHoiLz48L3N2Zz4="
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI3MiIgdmlld0JveD0iMCAwIDcyIDcyIiB3aWR0aD0iNzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMzYsNzIgTDM2LDcyIEM1NS44ODIyNTEsNzIgNzIsNTUuODgyMjUxIDcyLDM2IEw3MiwzNiBDNzIsMTYuMTE3NzQ5IDU1Ljg4MjI1MSwtMy42NTIzMTAyNmUtMTUgMzYsMCBMMzYsMCBDMTYuMTE3NzQ5LDMuNjUyMzEwMjZlLTE1IC0yLjQzNDg3MzVlLTE1LDE2LjExNzc0OSAwLDM2IEwwLDM2IEMyLjQzNDg3MzVlLTE1LDU1Ljg4MjI1MSAxNi4xMTc3NDksNzIgMzYsNzIgWiIgZmlsbD0iIzA4NjNGRiIvPjxwYXRoIGQ9Ik00Mi42NzE3Njc2LDI2LjAwNjAzMjUgTDU1LjM4Mjk5NywyNi4wMDYwMzI1IEw1NS4zODI5OTcsMjIuMzY0MjY5MSBMNDIuNjcxNzY3NiwyMi4zNjQyNjkxIEw0Mi42NzE3Njc2LDI2LjAwNjAzMjUgTDQyLjY3MTc2NzYsMjYuMDA2MDMyNSBaIE00NS42ODMwNjQ2LDMzLjk1MjIwNDIgQzQ0Ljg3MzA5MDYsMzQuNzc2MzM0MSA0NC4zNjIyNzA4LDM1Ljg5MjgwNzQgNDQuMTUzNDI3MywzNy4zMDE2MjQxIEw1NC4wMzk2MjU1LDM3LjMwMTYyNDEgQzUzLjkzNTIwMzgsMzUuNzk4MTQzOSA1My40MjE1NjE3LDM0LjY2MjE4MSA1Mi41MTI4MTA0LDMzLjg3OTgxNDQgQzUxLjU5Mjc3MDMsMzMuMTAzMDE2MiA1MC40NjEwNjQ1LDMyLjcxNjAwOTMgNDkuMTA2NDA0MSwzMi43MTYwMDkzIEM0Ny42Mzg4NTU1LDMyLjcxNjAwOTMgNDYuNDkzMDM4NiwzMy4xMjgwNzQyIDQ1LjY4MzA2NDYsMzMuOTUyMjA0MiBMNDUuNjgzMDY0NiwzMy45NTIyMDQyIEw0NS42ODMwNjQ2LDMzLjk1MjIwNDIgWiBNNTQuMjYyNTgsMjkuMDYzMTA5IEM1NS43OTUwMzk1LDI5LjczNjg5MSA1Ny4wNTY1NjY5LDMwLjgwNjAzMjUgNTguMDQ5OTg0NSwzMi4yNjQ5NjUyIEM1OC45NTU5MTM2LDMzLjU1MTI3NjEgNTkuNTM3Mjg4NywzNS4wNDM2MTk1IDU5LjgwMjU3NjMsMzYuNzM5MjExMSBDNTkuOTU3Nzk3OCwzNy43MzAzOTQ0IDYwLjAxOTg4NjQsMzkuMTY3MDUzNCA1OS45OTQ0ODY1LDQxLjAzNTI2NjggTDQ0LjAxMjMxNjksNDEuMDM1MjY2OCBDNDQuMTA4MjcyLDQzLjIwNDE3NjMgNDQuODY0NjI0LDQ0LjcyNzE0NjIgNDYuMzA5NTk1LDQ1LjU5ODYwNzkgQzQ3LjE4NDQ3OTgsNDYuMTQxNTMxMyA0OC4yMzcxNjM4LDQ2LjQxNDM4NTIgNDkuNDczMjkxMyw0Ni40MTQzODUyIEM1MC43NzQzMjk3LDQ2LjQxNDM4NTIgNTEuODM4MzAyNSw0Ni4wODMwNjI2IDUyLjY1MzkyMDksNDUuNDIzMjAxOSBDNTMuMTAyNjUyMSw0NS4wNjQwMzcxIDUzLjQ5Nzc2MTQsNDQuNTY4NDQ1NSA1My44MzY0MjY1LDQzLjkzMzY0MjcgTDU5LjY5MjUxMDIsNDMuOTMzNjQyNyBDNTkuNTM3Mjg4Nyw0NS4yMTQzODUyIDU4LjgyNjA5Miw0Ni41MjAxODU2IDU3LjU2NzM4NjgsNDcuODQ1NDc1NiBDNTUuNjAzMTI5Myw0OS45NDc1NjM4IDUyLjg1MTQ3NTUsNTEgNDkuMzE1MjQ3Niw1MSBDNDYuMzk0MjYxMyw1MSA0My44MTc1ODQ0LDUwLjExNDYxNzIgNDEuNTkwODYxNSw0OC4zMzgyODMxIEMzOS4zNTI4NDk4LDQ2LjU2NDczMzIgMzguMjQwODk5NCw0My42NzQ3MSAzOC4yNDA4OTk0LDM5LjY3NjU2NjEgQzM4LjI0MDg5OTQsMzUuOTI2MjE4MSAzOS4yNDg0MjgsMzMuMDUwMTE2IDQxLjI2MDY2MzEsMzEuMDQ4MjU5OSBDNDMuMjc4NTQyNSwyOS4wNTE5NzIyIDQ1Ljg4OTA4NTksMjguMDQ2ODY3NyA0OS4xMDM1ODE5LDI4LjA0Njg2NzcgQzUxLjAxNDIxNzQsMjguMDQ2ODY3NyA1Mi43MzI5NDI3LDI4LjM4NjU0MjkgNTQuMjYyNTgsMjkuMDYzMTA5IEw1NC4yNjI1OCwyOS4wNjMxMDkgTDU0LjI2MjU4LDI5LjA2MzEwOSBaIE0xNy45MTI1Mjc5LDM3LjM3OTU4MjQgTDE3LjkxMjUyNzksNDUuMTgzNzU4NyBMMjUuMTE0ODA1Myw0NS4xODM3NTg3IEMyNi40MDE3MzI2LDQ1LjE4Mzc1ODcgMjcuNDA2NDM5LDQ1LjAxMTEzNjkgMjguMTIwNDU3OSw0NC42Njg2Nzc1IEMyOS40MjE0OTYzLDQ0LjAyODMwNjMgMzAuMDcwNjA0Myw0Mi44MTQzODUyIDMwLjA3MDYwNDMsNDEuMDE1Nzc3MyBDMzAuMDcwNjA0MywzOS40OTAwMjMyIDI5LjQ0NDA3MzksMzguNDQ1OTM5NyAyOC4xODI1NDY1LDM3Ljg3NTE3NCBDMjcuNDc2OTk0MiwzNy41NTc3NzI2IDI2LjQ4NjM5ODksMzcuMzkwNzE5MyAyNS4yMTY0MDQ4LDM3LjM3OTU4MjQgTDE3LjkxMjUyNzksMzcuMzc5NTgyNCBMMTcuOTEyNTI3OSwzNy4zNzk1ODI0IFogTTE3LjkxMjUyNzksMjYuMDgxMjA2NSBMMTcuOTEyNTI3OSwzMi41Mzc4MTkgTDI1LjEyNjA5NDEsMzIuNTM3ODE5IEMyNi40MTAxOTkyLDMyLjUzNzgxOSAyNy40NTcyMzg4LDMyLjI5NTU5MTYgMjguMjY0MzkwNiwzMS44MTExMzY5IEMyOS4wNjU4OTc5LDMxLjMyNjY4MjEgMjkuNDY5NDczOCwzMC40NjkxNDE1IDI5LjQ2OTQ3MzgsMjkuMjQ0MDgzNSBDMjkuNDY5NDczOCwyNy44NzcwMzAyIDI4LjkzODg5ODUsMjYuOTc3NzI2MiAyNy44Nzc3NDc5LDI2LjUzNzgxOSBDMjYuOTU3NzA3OCwyNi4yMzQzMzg3IDI1Ljc4OTMxMzMsMjYuMDgxMjA2NSAyNC4zNjk3NDIxLDI2LjA4MTIwNjUgTDE3LjkxMjUyNzksMjYuMDgxMjA2NSBMMTcuOTEyNTI3OSwyNi4wODEyMDY1IFogTTM0LjAyMTY5NywyNC4xMTgzMjk1IEMzNC45Mjc2MjYsMjUuMzYyODc3IDM1LjM4MjAwMTcsMjYuODQ5NjUyIDM1LjM4MjAwMTcsMjguNTg0MjIyNyBDMzUuMzgyMDAxNywzMC4zNjg5MDk1IDM0LjkyNzYyNiwzMS44MDgzNTI3IDM0LjAxMDQwODEsMzIuODk0MTk5NSBDMzMuNDk2NzY2MSwzMy41MDExNjAxIDMyLjc0MzIzNjMsMzQuMDU4MDA0NiAzMS43NDY5OTY1LDM0LjU1OTE2NDcgQzMzLjI1OTcwMDUsMzUuMTA0ODcyNCAzNC4zOTk4NzMsMzUuOTY1MTk3MiAzNS4xNzU5ODA0LDM3LjE0MjkyMzQgQzM1Ljk0MzYyMTMsMzguMzE3ODY1NCAzNi4zMzAyNjM5LDM5Ljc0ODk1NTkgMzYuMzMwMjYzOSw0MS40MzA2MjY1IEMzNi4zMzAyNjM5LDQzLjE2NTE5NzIgMzUuODg5OTk5Myw0NC43MjE1Nzc3IDM1LjAwNjY0NzksNDYuMDk2OTgzOCBDMzQuNDQ3ODUwNSw0Ny4wMDc0MjQ2IDMzLjc0Nzk0MjcsNDcuNzc1ODcwMSAzMi45MDY5MjQ0LDQ4LjM5OTUzNiBDMzEuOTYxNDg0NCw0OS4xMTUwODEyIDMwLjg0NjcxMTgsNDkuNjAyMzIwMiAyOS41NTY5NjIzLDQ5Ljg2OTYwNTYgQzI4LjI2NzIxMjgsNTAuMTM0MTA2NyAyNi44NzMwNDE1LDUwLjI2MjE4MSAyNS4zNjU5ODE5LDUwLjI2MjE4MSBMMTIsNTAuMjYyMTgxIEwxMiwyMSBMMjYuMzMzOTk5NiwyMSBDMjkuOTUyMDcxNiwyMS4wNTI5MDAyIDMyLjUxMTgxNTEsMjIuMDkxNDE1MyAzNC4wMjE2OTcsMjQuMTE4MzI5NSBMMzQuMDIxNjk3LDI0LjExODMyOTUgTDM0LjAyMTY5NywyNC4xMTgzMjk1IFoiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+"
                 alt="Behance" /></a></li>
         </ul>
       </div>
