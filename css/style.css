@@ -41,43 +41,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* .moon {
-  width:  200px;
-  height: 200px;
-  position: fixed;
-  top: -450px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  overflow: hidden;;
-  border-radius: 50%;
-  box-shadow: 0 0 20px 20px #000 inset,0 0 20px 2px;
-} */
-
-/* .moon::after {
-  position: absolute;
-  content: "";
-  top: -450px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-color: black;
-  border-radius: 50%;
-  box-shadow: -40px -40px 50px 2px #000 inset;
-} */
-
-/* .moon > div {
-  /* width: 200%;
-  height: 100%; */
-  /* animation: spin 40s linear infinite; */
-  /* background: url('../img/moon3.png'); */
-}
-
-/* .moon > img {
-  transform-origin: center center;
-} */
-
 .home2 {
   background-image: url('../img/moon_copy2.jpg');
   background-attachment: fixed;
@@ -416,7 +379,7 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover, a:focus {
   color: #fd6e02;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 nav>ul>li>a:active {
